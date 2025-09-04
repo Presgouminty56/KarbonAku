@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KarbonAku | Karbon Aktif Premium</title>
+  <meta name="description" content="KarbonAku - Penyedia karbon aktif premium untuk filtrasi, industri, dan rumah tangga."/>
+  <meta name="keywords" content="karbon aktif premium, karbon aktif industri, karbon aktif rumah tangga, karbon aktif kosmetik, karbon aktif food grade"/>
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Tim IT KarbonAku">
+  <meta name="publisher" content="Tim IT KarbonAku">
+  <link rel="canonical" href="https://karbonaku.id/">
+
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Segoe UI', Tahoma, sans-serif; color: #3e2723; line-height: 1.6; background: #f9f6f2;}
+
+    header {
+      background: linear-gradient(to right, #4e342e, #6d4c41);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {font-size: 2.2rem; margin-bottom: 10px;}
+    header p {font-size: 1.1rem;}
+
+    .container {max-width: 1100px; margin: auto; padding: 20px;}
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      color: #4e342e;
+    }
+
+    .keunggulan {margin: 50px 0;}
+    .grid-keunggulan {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .keunggulan-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .keunggulan-card:hover {transform: translateY(-5px);}
+    .keunggulan-card h3 {margin-bottom: 10px; color: #4e342e;}
+
+    .produk {margin: 50px 0;}
+    .grid-produk {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .card:hover {transform: translateY(-5px);}
+    .card img {width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px;}
+    .price {font-weight: bold; margin: 10px 0; color: #a1887f;}
+    .btn {
+      display: inline-block;
+      background: #6d4c41;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {background: #5d4037;}
+
+    footer {
+  background: #4e342e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.social-footer {
+  margin-top: 10px;
+}
+
+.social-footer a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.social-footer a:hover {
+  color: #ffcc80; /* Warna hover (emas kecokelatan) */
+}
+
+    /* Perbaikan FAQ */
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.faq-item input[type="checkbox"] {
+  display: none;
+}
+
+.faq-question {
+  display: block; /* Agar penuh lebar */
+  width: 100%;
+  background: #6d4c41;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box; /* Menghindari overflow */
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item input[type="checkbox"]:checked + .faq-question::after {
+  content: '-';
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background: #f9f6f2;
+  color: #4e342e;
+  padding: 0 20px;
+}
+
+.faq-item input[type="checkbox"]:checked ~ .faq-answer {
+  max-height: 300px;
+  padding: 15px 20px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KarbonAku</h1>
+    <p>Penyedia Karbon Aktif Berkualitas untuk Berbagai Kebutuhan</p>
+  </header>
+
+  <main class="container">
+    <section class="keunggulan">
+      <h2>Kenapa Pilih KarbonAku?</h2>
+      <div class="grid-keunggulan">
+        <div class="keunggulan-card">
+          <h3>🔬 Kualitas Teruji</h3>
+          <p>Karbon aktif dengan standar internasional untuk berbagai aplikasi.</p>
+        </div>
+        <div class="keunggulan-card">
+          <h3>⚡ Efisiensi Tinggi</h3>
+          <p>Efektif menyerap bau, zat kimia, dan kotoran pada air dan udara.</p>
+        </div>
+        <div class="keunggulan-card">
+          <h3>🌿 Ramah Lingkungan</h3>
+          <p>Produk berasal dari bahan alami yang dapat diperbarui.</p>
+        </div>
+        <div class="keunggulan-card">
+          <h3>📦 Pengiriman Cepat</h3>
+          <p>Jangkauan pengiriman ke seluruh Indonesia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="produk">
+      <h2>Produk Karbon Aktif Unggulan</h2>
+      <div class="grid-produk">
+        <div class="card">
+          <img src="Gambar 1.png" alt="Karbon Aktif Powder Premium">
+          <h3>Karbon Aktif Powder</h3>
+          <p>Cocok untuk kosmetik, kesehatan, dan pembersihan air skala kecil.</p>
+          <p class="price">Rp 150.000/kg</p>
+          <a href="https://wa.link/eph8il" class="btn">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+          <img src="Gambar 1.png" alt="Karbon Aktif Hardwood Industri">
+          <h3>Karbon Aktif Hardwood</h3>
+          <p>Ideal untuk aplikasi industri dengan porositas tinggi.</p>
+          <p class="price">Rp 250.000/kg</p>
+          <a href="https://wa.link/eph8il" class="btn">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+          <img src="Gambar 1.png" alt="Karbon Aktif Granular Filtrasi Air">
+          <h3>Karbon Aktif Granular</h3>
+          <p>Digunakan untuk filtrasi air berskala besar dan laboratorium.</p>
+          <p class="price">Rp 350.000/kg</p>
+          <a href="https://wa.link/eph8il" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+    </section> 
+
+   <section class="produk">
+      <div class="grid-produk">
+        <div class="card">
+          <img src="Gambar 1.png" alt="Karbon Aktif Powder Premium">
+          <h3>Karbon Aktif Powder</h3>
+          <p>Cocok untuk kosmetik, kesehatan, dan pembersihan air skala kecil.</p>
+          <p class="price">Rp 150.000/kg</p>
+          <a href="https://wa.link/eph8il" class="btn">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+          <img src="Gambar 1.png" alt="Karbon Aktif Hardwood Industri">
+          <h3>Karbon Aktif Hardwood</h3>
+          <p>Ideal untuk aplikasi industri dengan porositas tinggi.</p>
+          <p class="price">Rp 250.000/kg</p>
+          <a href="https://wa.link/eph8il" class="btn">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+          <img src="Gambar 1.png" alt="Karbon Aktif Granular Filtrasi Air">
+          <h3>Karbon Aktif Granular</h3>
+          <p>Digunakan untuk filtrasi air berskala besar dan laboratorium.</p>
+          <p class="price">Rp 350.000/kg</p>
+          <a href="https://wa.link/eph8il" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="faq">
+      <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <input type="checkbox" id="faq1">
+          <label for="faq1" class="faq-question">Apa itu karbon aktif?</label>
+          <div class="faq-answer">
+            <p>Karbon aktif adalah bahan penyerap yang digunakan untuk menghilangkan bau, zat kimia, dan kotoran dari air, udara, serta berbagai produk industri.</p>
+          </div>
+        </div>
+        <br>
+        <div class="faq-item">
+          <input type="checkbox" id="faq2">
+          <label for="faq2" class="faq-question">Apakah aman digunakan untuk makanan?</label>
+          <div class="faq-answer">
+            <p>Ya, kami menyediakan karbon aktif food grade yang aman untuk aplikasi makanan dan minuman.</p>
+          </div>
+        </div>
+        <br>
+        <div class="faq-item">
+          <input type="checkbox" id="faq3">
+          <label for="faq3" class="faq-question">Berapa lama masa pakai karbon aktif?</label>
+          <div class="faq-answer">
+            <p>Masa pakai karbon aktif bergantung pada frekuensi dan kondisi pemakaian, biasanya berkisar antara 3–6 bulan sebelum perlu diganti.</p>
+          </div>
+          <br>
+          <div class="faq-item">
+          <input type="checkbox" id="faq4">
+          <label for="faq4" class="faq-question">Berapa lama masa pakai karbon aktif?</label>
+          <div class="faq-answer">
+            <p>Masa pakai karbon aktif bergantung pada frekuensi dan kondisi pemakaian, biasanya berkisar antara 3–6 bulan sebelum perlu diganti.</p>
+          </div>
+          <br>
+          <div class="faq-item">
+          <input type="checkbox" id="faq5">
+          <label for="faq5" class="faq-question">Berapa lama masa pakai karbon aktif?</label>
+          <div class="faq-answer">
+            <p>Masa pakai karbon aktif bergantung pada frekuensi dan kondisi pemakaian, biasanya berkisar antara 3–6 bulan sebelum perlu diganti.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.link/eph8il"
+   class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+<!-- CSS -->
+<style>
+.float{
+  	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px;
+	right:35px;
+	background-color:#25d366;
+	color:#FFFFFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+ </style>
+
+<footer>
+  <p>&copy; 2025 KarbonAku. Semua Hak Dilindungi.</p>
+  <div class="social-footer">
+    <a href="https://www.instagram.com/karbonaku/" target="_blank" aria-label="Instagram">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@KarbonAku-z5w" target="_blank" aria-label="YouTube">
+      <i class="fa fa-youtube-play"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61579938434731" target="_blank" aria-label="Facebook">
+      <i class="fa fa-facebook"></i>
+    </a>
+    <a href="https://www.tiktok.com/@karbonaku" target="_blank" aria-label="TikTok">
+      <i class="fa fa-music"></i> <!-- Ikon musik digunakan sebagai alternatif TikTok -->
+    </a>
+  </div>
+</footer>
+  
+</body>
+</html>
